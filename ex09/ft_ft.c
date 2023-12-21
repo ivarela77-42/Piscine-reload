@@ -6,18 +6,18 @@
 /*   By: ivarela77 <ivarela77@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 11:51:37 by ivanrodr          #+#    #+#             */
-/*   Updated: 2023/12/12 20:30:30 by ivarela77        ###   ########.fr       */
+/*   Updated: 2023/12/21 13:26:49 by ivarela77        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
+#include <stdio.h>
 
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int		num;
 	int		*nbr;
@@ -28,4 +28,4 @@ void	ft_ft(int *nbr)
 	ft_ft(nbr);
 	printf("%i", num);
 	return (0);
-} */
+}

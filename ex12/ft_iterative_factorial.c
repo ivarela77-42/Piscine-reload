@@ -6,11 +6,11 @@
 /*   By: ivarela77 <ivarela77@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 21:10:37 by ivarela77         #+#    #+#             */
-/*   Updated: 2023/12/14 18:13:46 by ivarela77        ###   ########.fr       */
+/*   Updated: 2023/12/21 13:27:20 by ivarela77        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
+#include <stdio.h>
 
 int	ft_iterative_factorial(int nb)
 {
@@ -29,9 +29,9 @@ int	ft_iterative_factorial(int nb)
 	return (factorial);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int num = 132;
 	printf("El factorial de %i es: %i\n", num, ft_iterative_factorial(num));
 	return (0);
-} */
+}

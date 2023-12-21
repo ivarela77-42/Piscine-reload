@@ -1,41 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_point.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivarela77 <ivarela77@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/14 19:22:29 by ivarela77         #+#    #+#             */
-/*   Updated: 2023/12/17 14:43:04 by ivarela77        ###   ########.fr       */
+/*   Created: 2023/12/19 20:55:33 by ivarela77         #+#    #+#             */
+/*   Updated: 2023/12/19 20:57:11 by ivarela77        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_point.h"
 
-void	ft_putchar(char c)
+void	set_point(t_point *point)
 {
-	write(1, &c, 1);
+	point->x = 42;
+	point->y = 21;
 }
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	int	i;
-	int	j;
+	t_point	point;
 
-	if (argc > 1)
-	{
-		i = 1;
-		while (i < argc)
-		{
-			j = 0;
-			while (argv[i][j])
-			{
-				ft_putchar(argv[i][j]);
-				j++;
-			}
-			write(1, "\n", 1);
-			i++;
-		}
-	}
+	set_point(&point);
 	return (0);
 }

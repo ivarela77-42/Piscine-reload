@@ -6,11 +6,11 @@
 /*   By: ivarela77 <ivarela77@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 18:54:11 by ivarela77         #+#    #+#             */
-/*   Updated: 2023/12/14 18:14:13 by ivarela77        ###   ########.fr       */
+/*   Updated: 2023/12/21 13:27:38 by ivarela77        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
+#include <stdio.h>
 
 int	ft_sqrt(int nb)
 {
@@ -26,9 +26,9 @@ int	ft_sqrt(int nb)
 	return (0);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int	num = 25;
 	printf("La raiz cuadrada de %i es: %i", num, ft_sqrt(num));
 	return (0);
-} */
+}

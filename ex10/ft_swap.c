@@ -6,11 +6,11 @@
 /*   By: ivarela77 <ivarela77@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 20:40:49 by ivarela77         #+#    #+#             */
-/*   Updated: 2023/12/12 20:40:53 by ivarela77        ###   ########.fr       */
+/*   Updated: 2023/12/21 13:27:00 by ivarela77        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
+#include <stdio.h>
 
 void	ft_swap(int *a, int *b)
 {
@@ -21,7 +21,7 @@ void	ft_swap(int *a, int *b)
 	*b = temp_num;
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int	a;
 	int	b;
@@ -32,4 +32,4 @@ void	ft_swap(int *a, int *b)
 	ft_swap(&a, &b);
 	printf("%i%i", a, b);
 	return (0);
-} */
+}

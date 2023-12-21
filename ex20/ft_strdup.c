@@ -1,33 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivarela77 <ivarela77@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/14 18:10:05 by ivarela77         #+#    #+#             */
-/*   Updated: 2023/12/21 13:28:02 by ivarela77        ###   ########.fr       */
+/*   Created: 2023/12/19 11:49:17 by ivarela77         #+#    #+#             */
+/*   Updated: 2023/12/21 13:28:44 by ivarela77        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int	ft_strlen(char *str)
+char	*ft_strdup(char *src)
 {
-	int	length;
+	char	*dest;
+	int		length;
+	int		index;
 
 	length = 0;
-	while (*str)
-	{
+	while (src[length])
 		length++;
-		str++;
+	dest = malloc(sizeof(char) * (length + 1));
+	if (!dest)
+		return (0);
+	index = 0;
+	while (index < length)
+	{
+		dest[index] = src[index];
+		index++;
 	}
-	return (length);
+	dest[index] = '\0';
+	return (dest);
 }
 
 int	main(void)
 {
-	char str[5] = "Hola";
-	printf("La longitud de '%s' es de: %i caracteres\n", str, ft_strlen(str));
+	char	saludo[5];
+	char	*ptr;
+
+	saludo[5] = "Hola";
+	ptr = ft_strdup(saludo);
+	printf("%s\n", ptr);
 	return (0);
 }

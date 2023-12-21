@@ -6,11 +6,11 @@
 /*   By: ivarela77 <ivarela77@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 20:20:38 by ivarela77         #+#    #+#             */
-/*   Updated: 2023/12/12 23:28:23 by ivarela77        ###   ########.fr       */
+/*   Updated: 2023/12/21 13:26:38 by ivarela77        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <unistd.h> */
+#include <unistd.h>
 
 void	ft_putchar(char c)
 {
@@ -26,8 +26,8 @@ void	ft_is_negative(int n)
 	write(1, "\n", 1);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	ft_is_negative(4);
 	return (0);
-} */
+}
