@@ -1,2 +1,2 @@
 # Piscine-reload
-Piscine review exercises of 42 Urduliz - September 2023
+Repaso de la piscina de 42 Urduliz - October 2023
